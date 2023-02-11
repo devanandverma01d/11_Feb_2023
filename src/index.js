@@ -1,17 +1,27 @@
+//1. Import area
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import A from './Components/A';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+//2. Function definition area
+function App() {
+  //every functio return something
+  return (
+    <>
+      <h1 className='head1'>This is 4th Project, How to pass data between React Functional Component</h1>
+    </>
+  )
+
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <>
     <App />
-  </React.StrictMode>
-);
+    <A surname="Verma" />
+  </>
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+);
+//3. Export area
+
